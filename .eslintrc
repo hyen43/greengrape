@@ -24,7 +24,7 @@
   "parserOptions": {
     "project": "./tsconfig.eslint.json"
   },
-  " env": {
+  "env": {
     "cypress/globals": true
   }
 }
