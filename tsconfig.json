@@ -27,6 +27,7 @@
     "resolveJsonModule": true, // json import 가능
     "isolatedModules": true, // 동작을 변경하지 않는 기능
     "noEmit": true,
+    "jsxImportSource": "@emotion/react",
     "jsx": "preserve" // tsx 파일을 jsx로 어떻게 컴파일할 것인지 'preserve', 'react-native', 'react', jsx(react17)
   },
   "include": ["src", "**/*.ts"],
