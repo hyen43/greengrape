@@ -1,18 +1,21 @@
-import { Global } from '@emotion/react';
-import globalStyle from './styles/globalStyle';
-import { ThemeProvider } from '@emotion/react';
-import theme from './styles/theme';
-import Home from './pages/Home';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+// import Home from './pages/Home';
+
+const Home = React.lazy(() => import('./pages/Home'));
 
 function App() {
   return (
-    <>
-      <ThemeProvider theme={theme}>
-        <Global styles={globalStyle} />
-        <header>하이 나현</header>
-        <Home />
-      </ThemeProvider>
-    </>
+    <Routes>
+      <Route
+        index
+        element={
+          <React.Suspense fallback={<>...</>}>
+            <Home />
+          </React.Suspense>
+        }
+      />
+    </Routes>
   );
 }
 
