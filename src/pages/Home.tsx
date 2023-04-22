@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from '@emotion/styled';
 
 const HomeWrapper = styled.div`
@@ -7,6 +8,8 @@ const HomeWrapper = styled.div`
   color: ${({ theme }) => theme.colors.black};
 `;
 
-const Home = () => <HomeWrapper />;
+function Home() {
+  return <HomeWrapper />;
+}
 
 export default Home;
