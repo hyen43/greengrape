@@ -9,7 +9,12 @@ const HomeWrapper = styled.div`
 `;
 
 function Home() {
-  return <HomeWrapper />;
+  return (
+    <>
+      <div>하잉</div>
+      <HomeWrapper />
+    </>
+  );
 }
 
 export default Home;
