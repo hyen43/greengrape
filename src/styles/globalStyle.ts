@@ -1,6 +1,8 @@
 import { css } from '@emotion/react';
+import reset from './reset';
 
 const globalStyle = css`
+  ${reset}
   * {
   }
   body {
