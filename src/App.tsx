@@ -1,20 +1,24 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import Header from '@components/organisms/header';
 
 const Home = React.lazy(() => import('@pages/Home'));
 
 function App() {
   return (
-    <Routes>
-      <Route
-        index
-        element={
-          <React.Suspense fallback={<>...</>}>
-            <Home />
-          </React.Suspense>
-        }
-      />
-    </Routes>
+    <>
+      <Header />
+      <Routes>
+        <Route
+          index
+          element={
+            <React.Suspense fallback={<>...</>}>
+              <Home />
+            </React.Suspense>
+          }
+        />
+      </Routes>
+    </>
   );
 }
 

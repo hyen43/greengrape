@@ -30,9 +30,16 @@ const font = {
   },
 };
 
+const mq = {
+  laptop: '@media only screen and (max-width: 1024px)',
+  tablet: '@media only screen and (max-width: 768px)',
+  mobile: '@media only screen and (max-width: 480px)',
+};
+
 const theme = {
   colors,
   font,
+  mq,
 };
 
 export default theme;

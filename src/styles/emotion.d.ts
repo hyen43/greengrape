@@ -33,5 +33,10 @@ declare module '@emotion/react' {
         400: string;
       };
     };
+    mq: {
+      laptop: string;
+      tablet: string;
+      mobile: string;
+    };
   }
 }
