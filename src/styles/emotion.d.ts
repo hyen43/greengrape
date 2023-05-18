@@ -20,6 +20,7 @@ declare module '@emotion/react' {
     };
     font: {
       size: {
+        xxxlg: string;
         xxlg: string;
         xlg: string;
         lg: string;
@@ -29,6 +30,7 @@ declare module '@emotion/react' {
         xxs: string;
       };
       weight: {
+        900: string;
         600: string;
         400: string;
       };

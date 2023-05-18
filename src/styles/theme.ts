@@ -16,8 +16,9 @@ const colors = {
 
 const font = {
   size: {
-    xxlg: '32px',
-    xlg: '26px',
+    xxxlg: '32px',
+    xxlg: '26px',
+    xlg: '24px',
     lg: '22px',
     md: '20px',
     sm: '16px',
@@ -25,6 +26,7 @@ const font = {
     xxs: '9px',
   },
   weight: {
+    900: '900',
     600: '600',
     400: '400',
   },
