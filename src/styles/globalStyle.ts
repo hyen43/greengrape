@@ -7,6 +7,7 @@ const globalStyle = css`
   }
   body {
     font-family: pretendard, sans-serif;
+    min-height: 100vh;
   }
 `;
 

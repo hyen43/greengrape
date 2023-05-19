@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import Logo from '../atoms/logo';
+import Logo from '../../common/atom/logo';
 import Text from '../atoms/text';
 
 const HeaderWrapper = styled.header`
