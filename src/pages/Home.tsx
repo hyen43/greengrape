@@ -1,19 +1,23 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import TitleSection from '@components/Home/molecule/TitleSection';
+import HomeOrganism from '@components/Home/organism/HomeOrganism';
 
-const HomeWrapper = styled.div`
-  width: 100px;
-  height: 100px;
-  background-color: ${props => props.theme.colors.primary};
-  color: ${({ theme }) => theme.colors.black};
+const HomeLayout = styled.section`
+  display: flex;
+  flex-direction: column;
+  margin: 63px 0 93px 0;
+  ${({ theme }) => theme.mq.laptop} {
+    margin: 74px 0 76px 0;
+  }
 `;
 
 function Home() {
   return (
-    <>
-      <div>하잉</div>
-      <HomeWrapper />
-    </>
+    <HomeLayout>
+      <TitleSection />
+      <HomeOrganism />
+    </HomeLayout>
   );
 }
 
