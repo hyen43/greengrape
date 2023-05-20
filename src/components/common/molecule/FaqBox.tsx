@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
-import Toggle from '../atom/toggle';
+import Toggle from '../../Home/atom/toggle';
 import FaqText from '../atom/faqText';
 
 const FaqBoxContainer = styled.div`
