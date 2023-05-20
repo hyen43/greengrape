@@ -5,7 +5,7 @@ const LayoutContainer = styled.main`
   margin: 0 208px;
 
   ${({ theme }) => theme.mq.laptop} {
-    margin: 0;
+    margin: 0 30px;
   }
 `;
 

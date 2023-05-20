@@ -1,9 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import FaqBox from '../molecule/FaqBox';
 
 const FaqSectionContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 `;
 
 const FaqTitleWrapper = styled.div`
@@ -23,6 +26,7 @@ function FaqSection() {
       <FaqTitleWrapper>
         <span>FAQ</span>
       </FaqTitleWrapper>
+      <FaqBox />
     </FaqSectionContainer>
   );
 }
