@@ -9,6 +9,7 @@ const FaqBoxContainer = styled.div`
   background-color: ${({ theme }) => theme.colors.secondary};
   padding: 28px 34px 22px 34px;
   border-radius: 10px;
+  cursor: pointer;
 `;
 
 const FaqTitleWrapper = styled.div`
@@ -26,7 +27,12 @@ const FaqBoxContentsWrapper = styled.div`
   border-radius: 10px;
 `;
 
-function FaqBox() {
+interface FaqBoxProps {
+  title: string;
+  content: string;
+}
+
+function FaqBox({ title, content }: FaqBoxProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
@@ -36,12 +42,12 @@ function FaqBox() {
   return (
     <FaqBoxContainer onClick={handleClick}>
       <FaqTitleWrapper>
-        <FaqText type="title" contents="테스트" />
+        <FaqText type="title" contents={title} />
         <Toggle isOpen={isOpen} />
       </FaqTitleWrapper>
       {isOpen && (
         <FaqBoxContentsWrapper>
-          <FaqText type="content" contents="테스트" />
+          <FaqText type="content" contents={content} />
         </FaqBoxContentsWrapper>
       )}
     </FaqBoxContainer>

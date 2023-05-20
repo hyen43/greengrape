@@ -10,14 +10,22 @@ const HomeOrganismContainer = styled.div`
   align-items: center;
 `;
 
-function HomeOrganixm() {
+interface HomeOrganismProps {
+  data: Array<{
+    index: number;
+    title: string;
+    content: string;
+  }>;
+}
+
+function HomeOrganism({ data }: HomeOrganismProps) {
   return (
     <HomeOrganismContainer>
       <ImageSection />
       <Button />
-      <FaqSection />
+      <FaqSection data={data} />
     </HomeOrganismContainer>
   );
 }
 
-export default HomeOrganixm;
+export default HomeOrganism;

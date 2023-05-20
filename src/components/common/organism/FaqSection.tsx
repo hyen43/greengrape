@@ -20,13 +20,38 @@ const FaqTitleWrapper = styled.div`
   }
 `;
 
-function FaqSection() {
+const FaqBoxWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 51px;
+  width: 100%;
+  ${({ theme }) => theme.mq.laptop} {
+    gap: 28px;
+  }
+`;
+
+interface FaqSectionProps {
+  data: Array<{
+    index: number;
+    title: string;
+    content: string;
+  }>;
+}
+
+function FaqSection({ data }: FaqSectionProps) {
+  if (!data) return null;
   return (
     <FaqSectionContainer>
       <FaqTitleWrapper>
         <span>FAQ</span>
       </FaqTitleWrapper>
-      <FaqBox />
+      <FaqBoxWrapper>
+        {data &&
+          data?.map(el => (
+            <FaqBox key={el.index} title={el.title} content={el.content} />
+          ))}
+      </FaqBoxWrapper>
     </FaqSectionContainer>
   );
 }

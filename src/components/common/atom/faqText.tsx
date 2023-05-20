@@ -5,6 +5,7 @@ const FaqSpan = styled.span<{ type: 'title' | 'content' }>`
   font-weight: ${({ type, theme }) =>
     type === 'title' ? theme.font.weight[500] : theme.font.weight[400]};
   font-size: ${({ theme }) => theme.font.size.md};
+  color: ${({ type, theme }) => type === 'content' && theme.colors.gray400};
 `;
 
 interface FaqTextProps {

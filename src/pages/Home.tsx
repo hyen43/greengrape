@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import TitleSection from '@components/Home/molecule/TitleSection';
 import HomeOrganism from '@components/Home/organism/HomeOrganism';
+import { useFaq } from 'hooks/useFaq';
 
 const HomeLayout = styled.section`
   display: flex;
@@ -13,10 +14,12 @@ const HomeLayout = styled.section`
 `;
 
 function Home() {
+  const { Faq } = useFaq();
+
   return (
     <HomeLayout>
       <TitleSection />
-      <HomeOrganism />
+      {Faq && <HomeOrganism data={Faq?.BEFORE} />}
     </HomeLayout>
   );
 }
