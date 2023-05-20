@@ -32,7 +32,9 @@ function Header() {
 
   return (
     <HeaderWrapper>
-      <Logo />
+      <Link to="/">
+        <Logo />
+      </Link>
       <RightSection>
         <Link to="/">
           <Text isRouter={location.pathname === '/'} text="홈" />
