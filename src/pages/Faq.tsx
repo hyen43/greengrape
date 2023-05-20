@@ -8,7 +8,7 @@ const FaqLayout = styled.section`
   flex-direction: column;
   margin: 63px 0 93px 0;
   ${({ theme }) => theme.mq.laptop} {
-    margin: 74px 0 76px 0;
+    margin: 40px 0 76px 0;
   }
 `;
 
@@ -18,7 +18,11 @@ function FaqPage() {
 
   const newData = [...Faq.BEFORE, ...Faq.AFTER];
 
-  return <FaqLayout>{Faq && <FaqTemplate data={newData} />}</FaqLayout>;
+  return (
+    <FaqLayout>
+      {Faq && <FaqTemplate data={newData} image="/images/faq.png" />}
+    </FaqLayout>
+  );
 }
 
 export default FaqPage;

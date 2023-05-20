@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import TitleSection from '@components/Home/molecule/TitleSection';
-import HomeOrganism from '@components/common/template/FaqTemplate';
+import FaqTemplate from '@components/common/template/FaqTemplate';
 import { useFaq } from 'hooks/useFaq';
 
 const HomeLayout = styled.section`
@@ -19,7 +19,7 @@ function Home() {
   return (
     <HomeLayout>
       <TitleSection />
-      {Faq && <HomeOrganism data={Faq?.BEFORE} />}
+      {Faq && <FaqTemplate data={Faq?.BEFORE} image="/images/main.png" />}
     </HomeLayout>
   );
 }
