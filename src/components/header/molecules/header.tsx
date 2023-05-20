@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import styled from '@emotion/styled';
 import Logo from '../../common/atom/logo';
 import Text from '../atoms/text';
@@ -20,25 +20,26 @@ const HeaderWrapper = styled.header`
 
 const RightSection = styled.div`
   display: flex;
-  justify-content: space-between;
+  gap: 50px;
   align-items: center;
-  width: 126px;
-  height: 65px;
+  ${({ theme }) => theme.mq.laptop} {
+    gap: 38px;
+  }
 `;
 
 function Header() {
   const location = useLocation();
 
-  useEffect(() => {
-    console.log('===location', location);
-  }, [location]);
-
   return (
     <HeaderWrapper>
       <Logo />
       <RightSection>
-        <Text color="#51E14E" text="홈" />
-        <Text text="FAQ" />
+        <Link to="/">
+          <Text isRouter={location.pathname === '/'} text="홈" />
+        </Link>
+        <Link to="/faq">
+          <Text isRouter={location.pathname === '/faq'} text="FAQ" />
+        </Link>
       </RightSection>
     </HeaderWrapper>
   );
