@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import styled from '@emotion/styled';
 import Logo from '../../common/atom/logo';
 import Text from '../atoms/text';
@@ -26,6 +27,12 @@ const RightSection = styled.div`
 `;
 
 function Header() {
+  const location = useLocation();
+
+  useEffect(() => {
+    console.log('===location', location);
+  }, [location]);
+
   return (
     <HeaderWrapper>
       <Logo />
