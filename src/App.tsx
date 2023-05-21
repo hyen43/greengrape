@@ -5,6 +5,7 @@ import Footer from '@components/footer/molecule/footer';
 import Layout from '@styles/layout';
 
 const Home = React.lazy(() => import('@pages/Home'));
+const Share = React.lazy(() => import('@pages/Share'));
 
 function App() {
   return (
@@ -17,6 +18,14 @@ function App() {
             element={
               <React.Suspense fallback={<>...</>}>
                 <Home />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="share"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <Share />
               </React.Suspense>
             }
           />
