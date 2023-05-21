@@ -1,0 +1,50 @@
+{
+  "data": [
+    {
+      "index": 1,
+      "title": "중소기업취업청년 전월세보증금대출",
+      "rate": "연 1.2%",
+      "limit": "최대 1억원 이내",
+      "term": "최초 2년(4회 연장, 최장 10년 이용가능)",
+      "duplicate": true,
+      "duplacate_loan": "역세권 청년주택 주거비 지원",
+      "feature": [
+        { "index": 1, "title": "중복가능" },
+        { "index": 2, "title": "최저금리" }
+      ],
+      "url": "https://nhuf.molit.go.kr/FP/FP05/FP0502/FP05020603.jsp"
+    },
+    {
+      "index": 2,
+      "title": "청년전용 버팀목전세자금",
+      "rate": "연 1.5% ~ 2.1%",
+      "limit": "최대 2억원 이내(임차보증금의 80% 이내)",
+      "term": "최초 2년(4회 연장, 최장 10년 이용가능)",
+      "duplicate": true,
+      "duplacate_loan": "역세권 청년주택 주거비 지원",
+      "feature": [
+        { "index": 1, "title": "중복가능" },
+        { "index": 2, "title": "최대한도" }
+      ],
+      "url": "https://nhuf.molit.go.kr/FP/FP05/FP0502/FP05020301.jsp"
+    },
+    {
+      "index": 3,
+      "title": "버팀목 전세자금",
+      "rate": "연 1.8% ~ 2.4%",
+      "limit": "수도권 1.2억원, 수도권 외 0.8억원 이내",
+      "term": "최초 2년(4회 연장, 최장 10년 이용가능)",
+      "duplicate": false,
+      "url": "https://nhuf.molit.go.kr/FP/FP05/FP0502/FP05020101.jsp"
+    },
+    {
+      "index": 4,
+      "title": "기타 전세자금",
+      "rate": "연 2.1%",
+      "limit": "수도권 1억원, 수도권 외 0.7억원 이내",
+      "term": "최초 2년(4회 연장, 최장 10년 이용가능)",
+      "duplicate": false,
+      "url": "https://nhuf.molit.go.kr/FP/FP05/FP0502/FP05020401.jsp"
+    }
+  ]
+}
