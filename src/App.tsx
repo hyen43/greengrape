@@ -6,6 +6,7 @@ import Layout from '@styles/layout';
 
 const Home = React.lazy(() => import('@pages/Home'));
 const Result = React.lazy(() => import('@pages/Result'));
+const Faq = React.lazy(() => import('@pages/Faq'));
 
 function App() {
   return (
@@ -26,6 +27,14 @@ function App() {
             element={
               <React.Suspense fallback={<>...</>}>
                 <Result />
+              </React.Suspense>
+              }
+            />
+          <Route
+            path="faq"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <Faq />
               </React.Suspense>
             }
           />

@@ -1,21 +1,19 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-const TextContainer = styled.p<{ color?: string }>`
-  flex: 1;
+const TextContainer = styled.p<{ isRouter: boolean }>`
   text-align: center;
   font-weight: ${({ theme }) => theme.font.weight[600]};
   font-size: ${({ theme }) => theme.font.size.md};
-  color: ${({ color, theme }) => color || theme.colors.black};
+  color: ${({ isRouter, theme }) => isRouter && theme.colors.primary};
 `;
 interface TextProps {
-  // eslint-disable-next-line react/require-default-props
-  color?: string;
+  isRouter: boolean;
   text: string;
 }
 
-function Text({ color, text }: TextProps) {
-  return <TextContainer color={color}>{text}</TextContainer>;
+function Text({ text, isRouter }: TextProps) {
+  return <TextContainer isRouter={isRouter}>{text}</TextContainer>;
 }
 
 export default Text;

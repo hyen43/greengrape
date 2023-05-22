@@ -78,6 +78,11 @@ const reset = css`
   th {
     padding: 0;
   }
+  a {
+    color: black;
+    text-decoration: none;
+    outline: none;
+  }
 `;
 
 export default reset;

@@ -2,13 +2,10 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const LayoutContainer = styled.main`
-  display: flex;
-  flex: 1;
-  flex-diretion: column;
   margin: 0 208px;
 
   ${({ theme }) => theme.mq.laptop} {
-    margin: 0;
+    margin: 0 30px;
   }
 `;
 
