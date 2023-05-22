@@ -31,6 +31,7 @@ declare module '@emotion/react' {
       };
       weight: {
         900: string;
+        700: string;
         600: string;
         500: string;
         400: string;

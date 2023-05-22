@@ -9,7 +9,12 @@
     "prettier"
   ],
   "rules": {
-    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "cypress/no-assigning-return-values": "error",
     "cypress/no-unnecessary-waiting": "error",
     "cypress/assertion-before-screenshot": "warn",
@@ -19,7 +24,12 @@
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "warn"
   },
-  "plugins": ["@typescript-eslint", "import", "prettier", "cypress"],
+  "plugins": [
+    "@typescript-eslint",
+    "import",
+    "prettier",
+    "cypress"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
