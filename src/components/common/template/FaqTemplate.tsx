@@ -16,12 +16,13 @@ interface FaqTemplateProps {
     title: string;
     content: string;
   }>;
+  image: string;
 }
 
-function FaqTemplate({ data }: FaqTemplateProps) {
+function FaqTemplate({ data, image }: FaqTemplateProps) {
   return (
     <FaqTemplateContainer>
-      <ImageSection />
+      <ImageSection image={image} />
       <Button />
       <FaqSection data={data} />
     </FaqTemplateContainer>

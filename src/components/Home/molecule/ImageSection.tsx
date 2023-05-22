@@ -10,10 +10,14 @@ const ImageSectionContainer = styled.div<{ backgroundImage: string }>`
   background-size: cover;
 `;
 
-function ImageSection() {
+interface ImageSectionProps {
+  image: string;
+}
+
+function ImageSection({ image }: ImageSectionProps) {
   return (
     <ImageSectionContainer backgroundImage="/images/main_bg.png">
-      <img src="/images/main.png" alt="메인이미지" />
+      <img src={image} alt="메인이미지" />
     </ImageSectionContainer>
   );
 }
