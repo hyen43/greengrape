@@ -6,7 +6,7 @@ import Button from '@components/result/atoms/button';
 const ResultTemplateContainer = styled.div``;
 
 const PageTitleWrapper = styled.div`
-  margin-left: -100px;
+  // margin-left: -100px; //Refactor)스타일 논의 필요
 
   ${({ theme }) => theme.mq.laptop} {
     margin-left: 0px;
@@ -34,6 +34,7 @@ const CardSectionWrapper = styled.div`
   margin: 84px 0;
   display: flex;
   flex-direction: column;
+  align-items: center; //Refactor)스타일 정렬을 위해 수정
   gap: 36px;
 
   ${({ theme }) => theme.mq.laptop} {

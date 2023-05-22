@@ -29,16 +29,16 @@ function App() {
               <React.Suspense fallback={<>...</>}>
                 <Share />
               </React.Suspense>
-             }
-            />
+            }
+          />
           <Route
             path="/result"
             element={
               <React.Suspense fallback={<>...</>}>
                 <Result />
               </React.Suspense>
-              }
-            />
+            }
+          />
           <Route
             path="faq"
             element={
