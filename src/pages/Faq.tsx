@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import TitleSection from '@components/Home/molecule/TitleSection';
-import HomeOrganism from '@components/common/template/FaqTemplate';
+import FaqTemplate from '@components/common/template/FaqTemplate';
 import { useFaq } from 'hooks/useFaq';
 
 const HomeLayout = styled.section`
@@ -13,15 +13,10 @@ const HomeLayout = styled.section`
   }
 `;
 
-function Home() {
+function FaqPage() {
   const { Faq } = useFaq();
 
-  return (
-    <HomeLayout>
-      <TitleSection />
-      {Faq && <HomeOrganism data={Faq?.BEFORE} />}
-    </HomeLayout>
-  );
+  return <HomeLayout>{Faq && <FaqTemplate data={Faq?.BEFORE} />}</HomeLayout>;
 }
 
-export default Home;
+export default FaqPage;
