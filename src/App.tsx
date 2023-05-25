@@ -8,6 +8,7 @@ const Home = React.lazy(() => import('@pages/Home'));
 const Share = React.lazy(() => import('@pages/Share'));
 const Result = React.lazy(() => import('@pages/Result'));
 const Faq = React.lazy(() => import('@pages/Faq'));
+const Form = React.lazy(() => import('@pages/Form'));
 
 function App() {
   return (
@@ -20,6 +21,14 @@ function App() {
             element={
               <React.Suspense fallback={<>...</>}>
                 <Home />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="form"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <Form />
               </React.Suspense>
             }
           />
